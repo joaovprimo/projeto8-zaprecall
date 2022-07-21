@@ -1,0 +1,170 @@
+@media (max-width:767px) {
+    *{
+     
+    }
+    body {
+        background-color: #FB6B6B;
+        font-family: 'Righteous';
+    }
+    .root{
+        height: 100vh;
+        width: 100vw;
+    }
+    .inicialTool {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inicialTool img {
+        width: 136px;
+        height: 161px;
+    }
+
+    .inicialTool h1 {
+        font-size: 36px;
+        font-weight: 400;
+        color: #FFFFFF;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .box {
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        font-family: 'Recursive';
+        border-radius: 5px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+    .inicialTool .box {
+        width: 246px;
+        height: 55px;
+        color:rgba(215, 9, 0, 1) ;
+        border: 1px solid #D70900;
+        line-height: 22px;
+    }
+    .zapToll{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .head{
+        display: flex;
+        justify-content: space-around;
+        width: 300px;
+        height: 60px;
+        margin-top: 45px;
+    }
+    .head img{
+        width: 55px;
+        height: 60px;
+    }
+    .head h1{
+       padding: 5px;
+        width: 205px;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 45px;
+        color: #FFFFFF;
+    }
+.content{
+    margin-top: 50px;
+    height: 100vh;
+    overflow-y: hidden;
+}
+.zapToll .box{
+    width: 300px;
+    margin-bottom: 25px;
+}
+.Initial{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    line-height: 19px;
+    color: rgba(51, 51, 51, 1);
+    height: 65px;
+}
+.box h3{
+    margin-left:15px;
+
+}
+.box ion-icon{
+    margin-right: 15px;
+    font-size: 30px;
+}
+.Open{
+    position: relative;
+font-weight: 400;
+background-color: 
+rgba(255, 255, 212, 1);
+height: 131px;
+justify-content: space-between;
+}
+
+.Open ion-icon{
+    position:absolute;
+    bottom: 5px;
+    right:0;
+}
+.Open h3{
+    position:absolute;
+    top: 18px;
+    left: 0;
+}
+.Back .title{
+    position: absolute;
+    top: 18px;
+    left: 0;
+}
+.Back .box{
+    width: 85px;
+    height: 37px;
+    font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+margin-top: 70px;
+color: #FFFFFF;
+margin-left: 10px;
+margin-right: 10px;
+
+}
+.Back h3{
+position: unset;
+}
+.notremember{
+background-color: rgba(255, 48, 48, 1);
+}
+.almostremember{
+   background-color: rgba(255, 146, 46, 1);
+}
+.zap{
+background-color: rgba(47, 190, 52, 1);
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 70px;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+}
+.bottom h3{
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+color: #333333;
+font-family: 'Recursive';
+}
+    .hidden{
+        display: none;
+    }
+}

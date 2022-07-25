@@ -1,6 +1,6 @@
 @media (max-width:767px) {
     *{
-     
+     box-sizing: border-box;
     }
     body {
         background-color: #FB6B6B;
@@ -50,6 +50,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100vw;
+        overflow-y: scroll;
+        margin-bottom: 80px;
     }
     .head{
         display: flex;
@@ -73,11 +76,13 @@
 .content{
     margin-top: 50px;
     height: 100vh;
-    overflow-y: hidden;
+    margin-bottom: 50px;
 }
 .zapToll .box{
     width: 300px;
     margin-bottom: 25px;
+    height: 65px;
+    justify-content: space-between;
 }
 .Initial{
     display: flex;
@@ -96,29 +101,39 @@
     margin-right: 15px;
     font-size: 30px;
 }
+.box h2{
+    margin-left: 10px;
+}
 .Open{
     position: relative;
 font-weight: 400;
 background-color: 
 rgba(255, 255, 212, 1);
-height: 131px;
 justify-content: space-between;
 }
+.zapToll .Open {
+    height: 131px;
+}
 
-.Open ion-icon{
+.zapToll .Back {
+    height:150px;
+}
+
+.Open img{
     position:absolute;
     bottom: 5px;
-    right:0;
+    right:5px;
 }
-.Open h3{
-    position:absolute;
+.Open h2{
+   position:absolute;
     top: 18px;
     left: 0;
+    font-family: 'Recursive';
 }
 .Back .title{
     position: absolute;
     top: 18px;
-    left: 0;
+    left: 10px;
 }
 .Back .box{
     width: 85px;
@@ -130,7 +145,7 @@ margin-top: 70px;
 color: #FFFFFF;
 margin-left: 10px;
 margin-right: 10px;
-
+margin-bottom: unset;
 }
 .Back h3{
 position: unset;
@@ -147,15 +162,18 @@ background-color: rgba(47, 190, 52, 1);
 
 .bottom{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 70px;
+    min-height:70px ;
     position:fixed;
     bottom: 0;
     left: 0;
     background-color: #FFFFFF;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  font-family: 'Recursive';;
 }
 .bottom h3{
 font-weight: 400;
@@ -167,4 +185,39 @@ font-family: 'Recursive';
     .hidden{
         display: none;
     }
+
+.finish{
+color: rgba(255, 48, 48, 1);
+
+text-decoration-line: line-through;
 }
+
+.Almost{
+    color: rgba(255, 146, 46, 1);
+    text-decoration-line: line-through;
+    }
+    .Zap{
+        color: rgba(47, 190, 52, 1);
+        text-decoration-line: line-through;
+        }
+}
+.result{
+    display:flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+.txtBottom{
+margin-bottom: 15px;
+}
+.icons{
+    font-size: 23px;
+}
+ion-icon[name="close-circle"]{
+    color: rgba(255, 48, 48, 1);
+    }
+    ion-icon[name="help-circle"]{
+       color: rgba(255, 146, 46, 1);
+    }
+    ion-icon[name="checkmark-circle"]{
+    color: rgba(47, 190, 52, 1);
+    }

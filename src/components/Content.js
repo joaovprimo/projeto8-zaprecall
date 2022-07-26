@@ -32,15 +32,15 @@ function Chose(props) {
     props.setChoose(!props.choose);
     props.setCont(props.cont + 1);
     if (options.name === "box notremember") {
-      props.setStatus([...props.status, `${close - circle}`]);
+      props.setStatus([...props.status, "close-circle"]);
       return props.setChoice("Negative")
 
     } else if (options.name === "box almostremember") {
-      props.setStatus([...props.status, `${help - circle}`]);
+      props.setStatus([...props.status, "help-circle"]);
       return props.setChoice("Almost")
 
     } else {
-      props.setStatus([...props.status, `${checkmark - circle}`]);
+      props.setStatus([...props.status, "checkmark-circle"]);
       return props.setChoice("Zap")
 
     }
